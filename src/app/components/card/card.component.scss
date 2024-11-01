@@ -2,11 +2,10 @@
     width: 300px;
     height: 150px;
     border-radius: 20px;
-    margin: 8px 8px 8px 8px;
     display: flex;
     overflow: hidden;
     position: relative;
-    border: 1px solid #606060;
+    border: 1px solid #363636;
 
     .card-background {
         width: 300px;
@@ -50,9 +49,10 @@
         align-items: center;
         position: relative;
         border-radius: 20px;
+        transition: transform 0.3s;
         
         &:hover {
-            cursor: pointer;
+            cursor: pointer;            
         }
     }
 }
