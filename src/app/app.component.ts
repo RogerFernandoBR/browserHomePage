@@ -32,4 +32,10 @@ export class AppComponent {
     audio.src = '/assets/audio/4.mp3';
     audio.play();
   }
+
+  openCard() {
+    const audio = new Audio;
+    audio.src = '/assets/audio/12.mp3';
+    audio.play();
+  }
 }
