@@ -20,4 +20,16 @@ export class AppComponent {
       this.items.push(index.toString())
     }
   }
+
+  flipIn() {
+    const audio = new Audio;
+    audio.src = '/assets/audio/1.mp3';
+    audio.play();
+  }
+
+  flipOut() {
+    const audio = new Audio;
+    audio.src = '/assets/audio/4.mp3';
+    audio.play();
+  }
 }

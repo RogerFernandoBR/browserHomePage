@@ -1,6 +1,6 @@
 <div class="container">
   <ng-container *ngFor="let item of items; let idx = index">
-    <app-card-container [imageUrl]="item"></app-card-container>
+    <app-card-container [imageUrl]="item" (mouseenter) ="flipIn()"  (mouseleave) ="flipOut()"></app-card-container>
   </ng-container>
 </div>
 
