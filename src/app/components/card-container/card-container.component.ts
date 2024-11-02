@@ -1,6 +1,7 @@
 import { Component, Input, Output } from '@angular/core';
 import { CardComponent } from '../card/card.component';
 import { CommonModule } from '@angular/common';
+import { ICard } from '../../interfaces/card.interface';
 
 @Component({
   selector: 'app-card-container',
@@ -10,5 +11,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './card-container.component.scss'
 })
 export class CardContainerComponent {
-  @Input() imageUrl: string | undefined;
+  @Input() cardOptions!: ICard;
 }

@@ -1,4 +1,5 @@
 import { Component, Input, input } from '@angular/core';
+import { ICard } from '../../interfaces/card.interface';
 
 @Component({
   selector: 'app-card',
@@ -8,5 +9,9 @@ import { Component, Input, input } from '@angular/core';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-  @Input() imageUrl: string | undefined;
+  @Input() cardOptions!: ICard;
+
+  openLink() {
+    window.open(this.cardOptions.url, '_blank')
+  }
 }
